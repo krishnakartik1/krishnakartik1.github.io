@@ -491,7 +491,7 @@ vRealize Operations tools
 		<div class="col-md-4">
 			<h4>REVAL</h4>
 			<p class="experience-period">
-				2024 - Present
+				Feb 2026 - Present
 			</p>
 		</div>
 		<div class="col-md-8">
@@ -499,10 +499,10 @@ vRealize Operations tools
 				<strong>AI Political Bias Benchmark</strong>
 				<span class="hidden-phone">
 					<ul>
-						<li>Open-source framework for measuring political bias in LLMs using counterfactual pair testing and LLM-as-judge scoring</li>
-						<li>Covers US and India politics; distinguishes political bias from factual accuracy</li>
-						<li>Selected as top 1,000 semi-finalist in the AWS 10,000 AIdeas Competition</li>
-						<li>Stack: Python, Amazon Bedrock, DynamoDB, Lambda, S3</li>
+						<li>4-level ground-truth taxonomy (Empirical Facts, Expert Consensus, Contested Empirical, Value Judgments) separating factual accuracy from political bias, enabling trust-calibrated responsible AI evaluation</li>
+						<li>Scoring models across 54 political topics (29 US, 25 India); counterfactual pair testing with LLM-as-judge; UK, Germany, and Brazil benchmarks in progress</li>
+						<li>Fine-tuned evaluation judge in progress: fine-tuning Gemma 4 (LoRA/PEFT, Unsloth, Lambda Labs) as a domain-specialised bias judge, replacing off-the-shelf LLM-as-judge with a model trained on the REVAL taxonomy</li>
+						<li>Multi-provider support: Amazon Bedrock, Anthropic, OpenAI, MiniMax, Ollama. AWS Top-1,000 Semi-Finalist</li>
 					</ul>
 				</span>
 				<span class="experience-details">
@@ -514,6 +514,33 @@ vRealize Operations tools
 			</p>
 		</div>
 	</div>
+
+<div class="experience row">
+	<div class="col-md-4">
+		<h4>reval-collector</h4>
+		<p class="experience-period">
+			April 2026 - Present
+		</p>
+	</div>
+	<div class="col-md-8">
+		<p>
+			<strong>AI Political Bias Evaluation Framework</strong>
+			<span class="hidden-phone">
+				<ul>
+					<li>Shipped LangGraph pipeline (6 nodes: search, generate, research, score, filter_cases, quality_filter) with conditional-edge control flow and configurable iteration budget</li>
+					<li>Evidence grounding via Tavily search with citation tracking; 5 case types covering factual accuracy, policy attribution, figure treatment, issue framing, and argumentation parity</li>
+					<li>Full reproducibility via run manifests (git SHA, prompt version, schema version); 85%+ test coverage; CI via GitHub Actions; human-in-the-loop review mode</li>
+				</ul>
+			</span>
+			<span class="experience-details">
+				<a href="https://github.com/krishnakartik1/reval-collector" target="_blank">
+					<span class="fa fa-github" style="font-size:24px">&nbsp;</span>
+					link to code
+				</a>
+			</span>
+		</p>
+	</div>
+</div>
 
 	<div class="experience row">
 		<div class="col-md-4">
